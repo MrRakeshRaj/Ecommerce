@@ -163,7 +163,9 @@ h4{
 }
 
 
-/*-----offers---------*/
+/****************************** offers ***********************************/
+
+
 .offer{
     background:radial-gradient(#FFF,#c0c0c0);
     margin-top:80px;
@@ -218,108 +220,7 @@ small{
 }
 
 
-/* Animated Share Button
-
-.share span{
-    position:relative;
-    text-align:center
-    left:60px;
-    top:25px;
-    font-weight:2em;
-    text-transform:uppercase;
-    font-weight: 700;
-    pointer-events: none;
-    transition:opacity 0.3s ease-in-out;
-}
-
-.share a{
-    line-height:80px;
-    width:80px;
-    text-align: center;
-    display:inline-block;
-    background-color:#ffffff;
-    color:#fff;
-    overflow:hidden;
-    opacity:1;
-    transition:all 0.3s ease-in-out;
-    margin:0 -20px;
-    box-shadow:3px 1px 3px rgba(0,0,0,0.1);
-}
-
-.share a:nth-child(1){
-    border-top-left-radius:40px;
-    border-bottom-left-radius:40px;
-    margin-left:0;
-}
-
-.share:hover a:hover , .share.hover a:hover{
-    color:#fff;
-
-}
-
-a:hover{
-    animation:text-pop-up-top 0.5s cubic-bezier(.250,.460,.450,.940) both;
-}
-
-@keyframes text-pop-up-top{
-
-    0%{
-        transform:translateY(0);
-        transform-origin: 50% 50%;
-    }
-    100%{
-        transform:translateY(-50px);
-        transform-origin: 50% 50%;
-    }
-
-}
-
-.share a:nth-child(1):hover{
-    background-color: #61c5ec;
-}
-.share a:nth-child(2):hover{
-    background-color: #3b5998;
-}
-.share a:nth-child(3):hover{
-    background-color: #ea4335;
-}
-
-.share a:nth-child(4){
-    border-top-right-radius:40px;
-    border-bottom-right-radius:40px;
-    margin-left:0;
-}
-
-.share a:nth-child(4):hover{
-    background-color: rgb(156, 39, 156);
-}
-
-.share:hover span,.share.hover span{
-    opacity:0;
-}
-
-.share:hover a, .share.hover a{
-    border-radius: 50%;
-    margin:0 10px;
-    color:#111;
-    font-size:28px;
-}
-
-
-.share:hover a:hover , .share.hover a:hover{
-    color:#fff;
-
-}
-
-a:hover{
-    animation:text-pop-up-top 0.5s cubic-bezier(0.250,0.460,0.450,0.940) both;
-
-}
-
-*/
-
-
-/* Footer*/
+/*************************** Footer ****************************/
 
 .footer{
     background:#000;
@@ -387,7 +288,7 @@ ul{
 }
 
 
-/*  ALL Products */
+/*******************  ALL Products *******************************/
 
 .row-2{
     justify-content:space-between;
@@ -421,3 +322,53 @@ select{
     color:#fff;
 }
 
+/**************** Single Product Details **********************/
+
+.single-product{
+    margin-top:80px;
+}
+
+.single-product .col-2 img{
+    padding:0;
+}
+
+.single-product .col-2{
+    padding:20px;
+}
+
+.single-product h4{
+    margin:20px 0;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.single-product select{
+    display:block;
+    padding :10px;
+    margin-top:20px;
+}
+
+.single-product input{
+    width:50px;
+    height:40px;
+    padding-left:10px;
+    font-size:20px;
+    margin-right:10px;
+    border:1px solid black;
+}
+
+.single-product .fa{
+    color:black;
+    margin-left:10px;
+
+}
+
+.small-img-row{
+    display:flex;
+    justify-content:space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor:pointer;
+}
