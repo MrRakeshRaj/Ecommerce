@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prduct Details - BATAS</title>
+    <title>Product Details - BATAS</title>
     <link rel="stylesheet" href="ecommerceStyle.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,18 +18,19 @@
     <div class="container">
         <div class="navbar">
             <div class="logo">
-                <img src="images/logo.png" width="65px" alt="website logo">
+                <a href="index.html"><img src="images/logo.png" width="65px" alt="website logo"></a>
             </div>
             <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Products</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Account</a></li>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="products.html">Men</a></li>
+                    <li><a href="products.html">Women</a></li>
+                    <li><a href="account.html">Account</a></li>
                 </ul>
             </nav>
-            <img src="images/cart.png" width="30px" height="30px" alt="cart">
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px" alt="cart"></a>
+            <img src="other/menu.png" class="menu-icon" onclick="menutoggle()">
         </div>
     </div>
 
@@ -154,7 +155,7 @@
         <div class="container">
             <div class="row">
                 <div class="footer-col-1">
-                    <h3>Experience BlueJeans App on Mobile</h3>
+                    <h3>Experience BATAS App on Mobile</h3>
                     <p>Download App for Android and ios</p>
                     <div class="app-logo">
                         <img src="images/play-store.png">
@@ -198,7 +199,7 @@
                 </div>
             </div>
             <hr>
-            <p class="copyright">Copyright 2020 - BlueJeans</p>
+            <p class="copyright">Copyright 2021 - BATAS</p>
         </div>
     </div>
 
@@ -220,6 +221,22 @@
         }
 
 
+
+    </script>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
 
     </script>
 

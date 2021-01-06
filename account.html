@@ -22,14 +22,15 @@
             </div>
             <nav>
                 <ul id="MenuItems">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Products</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Account</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="products.html">Men</a></li>
+                    <li><a href="products.html">Women</a></li>
+                    <li><a href="account.html">Account</a></li>
                 </ul>
             </nav>
             <img src="images/cart.png" width="30px" height="30px" alt="cart">
+            <img src="other/menu.png" class="menu-icon" onclick="menutoggle()">
         </div>
     </div>
 
@@ -76,7 +77,7 @@
         <div class="container">
             <div class="row">
                 <div class="footer-col-1">
-                    <h3>Experience BlueJeans App on Mobile</h3>
+                    <h3>Experience BATAS App on Mobile</h3>
                     <p>Download App for Android and ios</p>
                     <div class="app-logo">
                         <img src="images/play-store.png">
@@ -120,11 +121,11 @@
                 </div>
             </div>
             <hr>
-            <p class="copyright">Copyright 2020 - BlueJeans</p>
+            <p class="copyright">Copyright 2021 -BATAS</p>
         </div>
     </div>
 
-    <!-----------------------------Js Toggle Form----------------------------->
+    <!-------------------------------Js Toggle Form----------------------------->
     <script>
         var LoginForm = document.getElementById("LoginForm");
         var RegForm = document.getElementById("RegForm");
@@ -140,6 +141,21 @@
             LoginForm.style.transform = "translateX(300px)";
             Indicator.style.transform = "translateX(0px)";
 
+        }
+    </script>
+    <!--------------------------------JS for Toggle Menu-------------------------------------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
         }
 
     </script>
